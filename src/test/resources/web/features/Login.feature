@@ -1,7 +1,9 @@
-Feature: Login in clockify web
+Feature: Login
+
+  Background:
+    Given que ingreso a la pagina de inicio
 
   @Regression @Clockify @Login
-  Scenario: Login with valid credentials
-    Given The client is on clockify page
-    When The client login with credentials email email and password password
-    Then The client verify clockify home page is displayed
+  Scenario: Ingreso manual
+    When Ingreso de forma manual con email abel.cejas@crowdaronline.com y contrasena LoboAzul1996
+    Then ingresa a la pagina tracker de clockify
